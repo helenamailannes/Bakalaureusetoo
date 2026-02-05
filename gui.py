@@ -50,6 +50,13 @@ def Open_ChangeFullFace():
     back_f = Button(new_window, text="Tagasi", command=new_window.destroy)
     back_f.place(x=20, y=20, width=75, height=20)
 
+    photo_f1 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Terve_nagu.PNG")
+    photo_f1 = photo_f1.resize((100,100))
+    photoimage_f1 = ImageTk.PhotoImage(photo_f1)
+    new_window.photoimage_f1 = photoimage_f1
+    fullface_1 = Button(new_window, image=photoimage_f1, compound=TOP)
+    fullface_1.place(x=20, y=50, width=150, height=150)
+
 
 """Funktsioon, millega saab avada valiku erinevatest silmadest"""
 def Open_ChangeEyes():
@@ -130,6 +137,20 @@ def Open_ChangeBrows():
     back_b = Button(new_window, text="Tagasi", command=new_window.destroy)
     back_b.place(x=20, y=20, width=75, height=20)
 
+    photo_b1 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Kulmud_1.PNG")
+    photo_b1 = photo_b1.resize((100,100))
+    photoimage_b1 = ImageTk.PhotoImage(photo_b1)
+    new_window.photoimage_b1 = photoimage_b1
+    brows_1 = Button(new_window, image=photoimage_b1, compound=TOP)
+    brows_1.place(x=20, y=50, width=150, height=150)
+
+    photo_b2 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Kulmud_2.PNG")
+    photo_b2 = photo_b2.resize((100,100))
+    photoimage_b2 = ImageTk.PhotoImage(photo_b2)
+    new_window.photoimage_b2 = photoimage_b2
+    brows_2 = Button(new_window, image=photoimage_b2, compound=TOP)
+    brows_2.place(x=190, y=50, width=150, height=150)
+
 
 """Funktsioon, millega saab avada valiku erinevatest ninadest"""
 def Open_ChangeNose():
@@ -154,8 +175,92 @@ def Open_ChangeMouth():
     back_m = Button(new_window, text="Tagasi", command=new_window.destroy)
     back_m.place(x=20, y=20, width=75, height=20)
 
+    photo_m1 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Suu_1.PNG")
+    photo_m1 = photo_m1.resize((100,100))
+    photoimage_m1 = ImageTk.PhotoImage(photo_m1)
+    new_window.photoimage_m1 = photoimage_m1
+    mouth_1 = Button(new_window, image=photoimage_m1, compound=TOP)
+    mouth_1.place(x=20, y=50, width=150, height=150)
+
+    photo_m2 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Suu_2.PNG")
+    photo_m2 = photo_m2.resize((100,100))
+    photoimage_m2 = ImageTk.PhotoImage(photo_m2)
+    new_window.photoimage_m2 = photoimage_m2
+    mouth_2 = Button(new_window, image=photoimage_m2, compound=TOP)
+    mouth_2.place(x=190, y=50, width=150, height=150)
+
+    photo_m3 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Suu_3.PNG")
+    photo_m3 = photo_m3.resize((100,100))
+    photoimage_m3 = ImageTk.PhotoImage(photo_m3)
+    new_window.photoimage_m3 = photoimage_m3
+    mouth_3 = Button(new_window, image=photoimage_m3, compound=TOP)
+    mouth_3.place(x=360, y=50, width=150, height=150)
+
+    photo_m4 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Suu_4.PNG")
+    photo_m4 = photo_m4.resize((100,100))
+    photoimage_m4 = ImageTk.PhotoImage(photo_m4)
+    new_window.photoimage_m4 = photoimage_m4
+    mouth_4 = Button(new_window, image=photoimage_m4, compound=TOP)
+    mouth_4.place(x=530, y=50, width=150, height=150)
+
+    photo_m5 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Suu_5.PNG")
+    photo_m5 = photo_m5.resize((100,100))
+    photoimage_m5 = ImageTk.PhotoImage(photo_m5)
+    new_window.photoimage_m5 = photoimage_m5
+    mouth_5 = Button(new_window, image=photoimage_m5, compound=TOP)
+    mouth_5.place(x=700, y=50, width=150, height=150)
+
+    photo_m6 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Suu_6.PNG")
+    photo_m6 = photo_m6.resize((100,100))
+    photoimage_m6 = ImageTk.PhotoImage(photo_m6)
+    new_window.photoimage_m6 = photoimage_m6
+    mouth_6 = Button(new_window, image=photoimage_m6, compound=TOP)
+    mouth_6.place(x=870, y=50, width=150, height=150)
+
+    photo_m7 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Suu_7.PNG")
+    photo_m7 = photo_m7.resize((100,100))
+    photoimage_m7 = ImageTk.PhotoImage(photo_m7)
+    new_window.photoimage_m7 = photoimage_m7
+    mouth_7 = Button(new_window, image=photoimage_m7, compound=TOP)
+    mouth_7.place(x=1040, y=50, width=150, height=150)
+
+    photo_m8 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Suu_8.PNG")
+    photo_m8 = photo_m8.resize((100,100))
+    photoimage_m8 = ImageTk.PhotoImage(photo_m8)
+    new_window.photoimage_m8 = photoimage_m8
+    mouth_8 = Button(new_window, image=photoimage_m8, compound=TOP)
+    mouth_8.place(x=20, y=220, width=150, height=150)
+
+    photo_m9 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Suu_9.PNG")
+    photo_m9 = photo_m9.resize((100,100))
+    photoimage_m9 = ImageTk.PhotoImage(photo_m9)
+    new_window.photoimage_m9 = photoimage_m9
+    mouth_9 = Button(new_window, image=photoimage_m9, compound=TOP)
+    mouth_9.place(x=190, y=220, width=150, height=150)
+
+    photo_m10 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Suu_10.PNG")
+    photo_m10 = photo_m10.resize((100,100))
+    photoimage_m10 = ImageTk.PhotoImage(photo_m10)
+    new_window.photoimage_m10 = photoimage_m10
+    mouth_10 = Button(new_window, image=photoimage_m10, compound=TOP)
+    mouth_10.place(x=360, y=220, width=150, height=150)
+
+    photo_m11 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Suu_11.PNG")
+    photo_m11 = photo_m11.resize((100,100))
+    photoimage_m11 = ImageTk.PhotoImage(photo_m11)
+    new_window.photoimage_m11 = photoimage_m11
+    mouth_11 = Button(new_window, image=photoimage_m11, compound=TOP)
+    mouth_11.place(x=530, y=220, width=150, height=150)
+
+    photo_m12 = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Naoilmed\Suu_12.PNG")
+    photo_m12 = photo_m12.resize((100,100))
+    photoimage_m12 = ImageTk.PhotoImage(photo_m12)
+    new_window.photoimage_m12 = photoimage_m12
+    mouth_12 = Button(new_window, image=photoimage_m12, compound=TOP)
+    mouth_12.place(x=700, y=220, width=150, height=150)
 
 
+"""Main kood"""
 Label(main, text='Mida soovid teha?').pack(pady=10)
 """Nupp, millega avatakse uus akend, kus saab hakata näoilmeid valima"""
 SB_face = Button(main, text="SemuBoti näoilmed", command=Open_ChangeFace)
