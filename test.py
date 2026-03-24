@@ -1,15 +1,14 @@
 from tkinter import *
-from PIL import Image, ImageTk
 
 root = Tk()
+scrollbar = Scrollbar(root)
+scrollbar.pack( side = RIGHT, fill=Y )
 
-img = Image.open(r"C:\Users\helen\Desktop\Bakalaureusetoo\Näoilmed\Silmad_1.PNG")
-img = img.resize((100,100))
+mylist = Listbox(root, yscrollcommand = scrollbar.set )
+for line in range(100):
+   mylist.insert(END, "This is line number " + str(line))
+   
+mylist.pack( side = LEFT, fill = BOTH )
+scrollbar.config( command = mylist.yview )
 
-photo = ImageTk.PhotoImage(img)
-
-btn = Button(root, text="Click Me!", image=photo, compound=TOP)
-btn.image = photo
-btn.pack()
-
-root.mainloop()
+mainloop()
