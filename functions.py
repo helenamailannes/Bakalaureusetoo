@@ -321,10 +321,20 @@ def watch_videos(root, canvas):
 # gui beginning
 def start_gui():
     root = tk.Tk()
-    root.attributes("-fullscreen", True)
+
+    # get screen size
+    width = root.winfo_screenwidth()
+    height = root.winfo_screenheight()
+
+    # force window to fill screen
+    root.geometry(f"{width}x{height}+0+0")
+
+    # optional: remove window decorations (title bar)
+    root.overrideredirect(True)
 
     canvas = tk.Canvas(root, bg=BACKGROUND_COLOR, highlightthickness=0)
     canvas.pack(fill="both", expand=True)
 
     lock_screen(root, canvas)
+
     root.mainloop()
