@@ -322,14 +322,11 @@ def watch_videos(root, canvas):
 def start_gui():
     root = tk.Tk()
 
-    # get screen size
     width = root.winfo_screenwidth()
     height = root.winfo_screenheight()
 
-    # force window to fill screen
     root.geometry(f"{width}x{height}+0+0")
 
-    # optional: remove window decorations (title bar)
     root.overrideredirect(True)
 
     canvas = tk.Canvas(root, bg=BACKGROUND_COLOR, highlightthickness=0)
@@ -338,3 +335,5 @@ def start_gui():
     lock_screen(root, canvas)
 
     root.mainloop()
+
+    root.bind("<Escape>", lambda e: root.destroy())
