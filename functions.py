@@ -336,4 +336,22 @@ def start_gui():
 
     root.mainloop()
 
-    root.bind("<Escape>", lambda e: root.destroy())
+    enable_long_press(root, lambda: root.destroy())
+
+
+
+def enable_long_press(root, action):
+    press_time = {"start": None}
+
+    def on_press(event):
+            press_time["start"] = event.time
+
+    def on_release(event):
+        if press_time["start"] is not None:
+            if is_long_press(press_time["start"], event.time):
+                action()
+
+            press_time["start"] = None
+
+    root.bind("<Button-1>", on_press)
+    root.bind("<ButtonRelease-1>", on_release)

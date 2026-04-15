@@ -18,6 +18,9 @@ SWIPE_DISTANCE = 300
 # password to ented admin mode
 ADMIN_PASSWORD = "semubot26"
 
+# exit button press time
+LONG_PRESS_TIME = 2000
+
 # general file path
 BASE_DIR = os.path.dirname(__file__)
 
