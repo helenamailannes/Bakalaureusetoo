@@ -22,7 +22,7 @@ ADMIN_PASSWORD = "semubot26"
 BASE_DIR = os.path.dirname(__file__)
 
 # image paths
-LOGO_PATH = "Naoilmed/Logo.png"
+LOGO_PATH = "Naoilmed/Logo.PNG"
 
 FULL_FACE = "Naoilmed/Terve_nagu.png"
 
