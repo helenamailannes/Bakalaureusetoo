@@ -2,6 +2,15 @@ import os
 
 # background of every screen view
 BACKGROUND_COLOR = "#E8FFFF"
+COLOUR1 = "#ff6b56"
+COLOUR2 = "#00f0c7"
+COLOUR3 = "#ffbdb3"
+COLOUR4 = "#98f9e7"
+COLOUR5 = "#97f8e6"
+COLOUR6 = "WHITE"
+COLOUR7 = "BLACK"
+COLOUR8 = "#5d968b"
+COLOUR9 = "#b1483a"
 
 # swipe distance to unlock the screen (down -> up)
 SWIPE_DISTANCE = 300
