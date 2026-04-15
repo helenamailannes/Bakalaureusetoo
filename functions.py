@@ -334,9 +334,9 @@ def start_gui():
 
     lock_screen(root, canvas)
 
-    root.mainloop()
-
     enable_long_press(root, lambda: root.destroy())
+    
+    root.mainloop()
 
 
 
