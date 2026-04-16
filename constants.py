@@ -55,3 +55,7 @@ EYELINER = "Naoilmed/Eyeliner.PNG"
 
 BROWS_1 = "Naoilmed/Kulmud_1.PNG"
 BROWS_2 = "Naoilmed/Kulmud_2.PNG"
+
+
+current_widgets = []
+swipe_start = None
